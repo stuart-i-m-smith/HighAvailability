@@ -2,7 +2,7 @@
   <configuration default="false" name="Main" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="Main" />
     <module name="HazelCastExample.main" />
-    <option name="VM_PARAMETERS" value="-Dhazelcast.client.config=hazelcast-client-default.xml" />
+    <option name="VM_PARAMETERS" value="-Dhazelcast.config=hazelcast.xml" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
