@@ -32,6 +32,8 @@ public class Main implements MembershipListener, AvailabilityListener {
         if(isPrimaryInstance()){
             LOGGER.info("This is the primary instance.");
             notifyAllListeners();
+        }else{
+            LOGGER.info("Assuming secondary instance for failover.");
         }
 
         Thread.sleep((TimeUnit.SECONDS.toMillis(30)));
