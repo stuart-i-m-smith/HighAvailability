@@ -92,7 +92,7 @@ public class HighAvailabilityService {
 
         long oldestInstance = memberMap.keySet().stream()
                 .mapToLong(v -> v)
-                .min().getAsLong();
+                .min().orElse(0);
 
         return thisMemberId.equals(memberMap.get(oldestInstance));
     }
